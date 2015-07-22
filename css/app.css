@@ -1,0 +1,47 @@
+html,body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+}
+
+.sidebar {
+	background-color: black;
+	width: 254px;
+	position: fixed;
+	border-right: 1px solid #999;
+}
+
+.search {
+	padding: 5px;
+	border-bottom: 1px solid #666;
+	position: relative;
+	background: #e8e8e8;
+}
+.search input {
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-appearance: searchfield;
+	display: inline-block;
+	height: 22px;
+}
+
+#tree {
+	width: 100%;
+	overflow: auto;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 38px;
+	bottom: 0;
+}
+
+.main {
+	background-color: blue;
+	margin-left: 254px;
+	height: 400px;
+}
