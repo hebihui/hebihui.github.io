@@ -1,6 +1,6 @@
-var app = angular.module("Dawn", ['locationProvider','customFilters.markdown','customFilters.trust','ui-router'])
+var app = angular.module("Dawn", ['ui.router', 'customFilters.markdown','customFilters.trust']);
 
-app.config(['$locationProvider','$stateProvider','$urlRouterProvider',function($locationProvider, $stateProvider ,$urlRouterProvider){
+app.config(['$locationProvider','$stateProvider','$urlRouterProvider', function($locationProvider, $stateProvider , $urlRouterProvider){
 	// For any unmatched url, redirect to /
 	$urlRouterProvider.otherwise("/");
 
