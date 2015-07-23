@@ -4,7 +4,7 @@ app.config(['$locationProvider','$stateProvider','$urlRouterProvider', function(
 	// For any unmatched url, redirect to /
 	$urlRouterProvider.otherwise("/");
 
-	$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(false);
 
 	// Now set up the states
 	$stateProvider
