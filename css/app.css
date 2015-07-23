@@ -7,7 +7,8 @@ body {
 }
 
 .sidebar {
-	background-color: black;
+	height: 400px;
+	/*background-color: black;*/
 	width: 254px;
 	position: fixed;
 	border-right: 1px solid #999;
@@ -39,8 +40,17 @@ body {
 	top: 38px;
 	bottom: 0;
 }
+#tree a {
+	padding: 5px 10px;
+}
+#tree a:hover {
+	background-color: #CCC;
+}
+#tree a:focus {
+	background-color: #00539f;
+}
 
-.main {
+#main {
 	background-color: blue;
 	margin-left: 254px;
 	height: 400px;

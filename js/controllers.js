@@ -2,6 +2,7 @@ app.controller('SideController', ['$scope', 'nameFactory', function($scope, name
 	$scope.items = [];
 	nameFactory.getName.success(function(data){
 		$scope.items = data;
+		// console.log($scope.items[0]);
 	});
 }]);
 

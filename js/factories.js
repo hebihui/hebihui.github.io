@@ -1,6 +1,6 @@
 app.factory('nameFactory', ['$http', function($http) {
 	return {
-		getName: $http.get('/api/name.json')
+		getName: $http.get('/api/tree.json')
 	};
 }])
 

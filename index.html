@@ -16,7 +16,7 @@
     				<input type="text" class="small" ng-model="filterField">
     			</div>
     			<div class="group" id="tree">
-    				<!-- <a ng-repeat="item in items | filter: filterField | orderby: 'name'" ng-href="/{{item.name}}" ng-attr-title="{{item.intro}}" ng-bind="item.name"></a> -->
+    				<a ng-repeat="item in items | filter: filterField | orderBy: 'name'" ng-href="/{{item.name}}" ng-attr-title="{{item.intro}}" ng-bind="item.name"></a>
     			</div>
     		</div>
 
