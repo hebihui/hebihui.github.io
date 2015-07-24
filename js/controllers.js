@@ -6,7 +6,7 @@ app.controller('SideController', ['$scope', 'nameFactory', function($scope, name
 	});
 }]);
 
-app.controller('ShowController', ['$scope','$routeParams','docFactory', function($scope,$routeParams,docFactory){
+app.controller('ShowController', ['$scope','$stateParams','docFactory', function($scope,$routeParams,docFactory){
 	docFactory.getDoc($routeParams.name).success(function(data) {
 		$scope.content = data;
 	});

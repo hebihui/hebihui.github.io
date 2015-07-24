@@ -2,17 +2,18 @@ var app = angular.module("Dawn", ['ui.router', 'customFilters.markdown','customF
 
 app.config(['$locationProvider','$stateProvider','$urlRouterProvider', function($locationProvider, $stateProvider , $urlRouterProvider){
 	// For any unmatched url, redirect to /
-	$urlRouterProvider.otherwise("/");
 
 	$locationProvider.html5Mode(false);
 
+	$urlRouterProvider.otherwise("/");
+
 	// Now set up the states
 	$stateProvider
-		.state('index',{
-			url: "/",
-			templateUrl: "templates/about.html"
+		.state('/', {
+			url: '/',
+			templateUrl: 'templates/about.html'
 		})
-		.state('show',{
+		.state("show", {
 			url: "/:name",
 			templateUrl: "templates/show.html",
 			controller: "ShowController"
@@ -20,5 +21,3 @@ app.config(['$locationProvider','$stateProvider','$urlRouterProvider', function(
 }]);
 
 // app.constant('SERVICE', {"API": "/api/v1"});
-
-

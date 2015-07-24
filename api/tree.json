@@ -1,3 +1,24 @@
 [
-	{"name" : "index", "intro" : "首页"}
+	{"name" : "module", "intro" : "asdasddasdasd"},
+	{"name" : "2", "intro" : "dasd"},
+	{"name" : "Number.toPrecision()", "intro" : "格式化数字的有效位"},
+  {"name" : "EvalError", "intro" : "在不正确使eval()时抛出"},
+  {"name" : "Math", "intro" : "算术函数和常量"},
+  {"name" : "Array", "intro" : "对数组的内部支持"},
+  {"name" : "Date.setFullYear()", "intro" : "设置年份，也可以设置月份和天"},
+  {"name" : "RegExp", "intro" : "用于模式匹配的正则表达式"},
+  {"name" : "Array.length", "intro" : "数组的大小"},
+  {"name" : "String.replace()", "intro" : "替换一个与正则表达式匹配的子串"},
+  {"name" : "String.toLowerCase()", "intro" : "将字符串转换成小写"},
+  {"name" : "Date.setUTCMinutes()", "intro" : "设置Date对象的分钟字段、秒字段和毫秒字段（世界时）"},
+  {"name" : "Date.toLocaleTimeString()", "intro" : "返回Date对象的时间部分作为本地已格式化的字符串"},
+  {"name" : "Date.getUTCMinutes()", "intro" : "返回Date对象的分钟字段（世界时）"},
+  {"name" : "Math.SQRT2", "intro" : "算术常量"},
+  {"name" : "Date", "intro" : "操作日期和时间的对象"},
+  {"name" : "String.slice()", "intro" : "抽取一个子串"},
+  {"name" : "Number.valueOf()", "intro" : "返回原始数值"},
+  {"name" : "Math.log()", "intro" : "计算一个数的自然对数"},
+  {"name" : "Date.getUTCSeconds()", "intro" : "返回Date对象的秒字段（世界时）"},
+  {"name" : "Object.toLocaleString()", "intro" : "返回对象的本地字符串表示"},
+  {"name" : "Date.setTime()", "intro" : "以毫秒设置Date对象"}
 ]
