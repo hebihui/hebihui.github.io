@@ -1,6 +1,6 @@
 [
-	{"name" : "module", "intro" : "asdasddasdasd"},
-	{"name" : "2", "intro" : "dasd"},
+	{"name" : "module", "intro" : "模块简介"},
+	{"name" : "scope", "intro" : "作用域简介"},
 	{"name" : "Number.toPrecision()", "intro" : "格式化数字的有效位"},
   {"name" : "EvalError", "intro" : "在不正确使eval()时抛出"},
   {"name" : "Math", "intro" : "算术函数和常量"},

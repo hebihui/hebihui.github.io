@@ -15,12 +15,14 @@
                 <div class="form-group search">
                     <input type="text" class="form-control" ng-model="filterField" placeholder="search">
                 </div>
-    			<div class="group" id="tree">
+    			<div id="tree">
     				<a ng-repeat="item in items | filter: filterField | orderBy: 'name'" ng-href="#/{{item.name}}" ng-attr-title="{{item.intro}}" ng-bind="item.name"></a>
     			</div>
     		</div>
 
-    		<div id="main" ui-view></div>
+    		<div id="main" ui-view>
+                <div class="cowboy index">Welcome to DAWN.</div>      
+            </div>
     	</section>
     	<script src="js/app.js"></script>
     	<script src="js/filters.js"></script>

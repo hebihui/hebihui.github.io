@@ -39,7 +39,7 @@ body {
 	overflow: auto;
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin-top: -5px;
 	position: absolute;
 	top: 38px;
 	bottom: 0;
@@ -60,11 +60,13 @@ body {
 }
 
 #main {
+  position: relative;
 	margin-left: 254px;
 }
 
 
 #content h1{
+  position: relative;
   margin: 0;
   padding: 20px;
   line-height: 100%;
@@ -76,7 +78,6 @@ body {
 	font-size: 14px;
 }
 #content h1 + p{
-  margin: -20px;
   padding: 10px 20px;
   background: #00539f;
   color: #FFF;
@@ -84,13 +85,191 @@ body {
 #content h1 + p em{
   float: right;
 }
-/*#content h5{
-  margin-top: 35px;
-  padding-bottom: 5px;
+#content p + p{
+	margin: 20px;
+}
+#content h5{
+  margin: 10px 0;
+  padding: 10px 25px 3px;
   border-bottom: 1px solid #CCC;
 }
 #content h3{
-  margin: 5px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border-bottom: 1px solid #CCC;
+}
+#content h5 + p{
+	margin: 25px;
+}
+
+
+
+
+
+.cowboy{
+  margin: 0 auto;
+  text-align: center;
+}
+.cowboy::before{
+  display: inline-block;
+  content: " ";
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  vertical-align: middle;
+  background: transparent url(../image/loading.gif) center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.cowboy.index{
+  width: 100%;
+  height: 100px;
+  margin-top: -80px;
+  position: fixed;
+  top: 50%;
+  font-size: 24px;
+  margin-left: -11%;
+}
+.cowboy.index::before{
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.about h1 {
+  text-align: center;
+  padding-top:20%;
+  margin: 0px;
+}
+.myanimation {
+  width: 100px;
+  height: 70px;
+  background:red;
+  position:absolute;
+  text-align: center;
+	animation: myanimation 10s linear 0s infinite normal;
+  /* Firefox: */
+  -moz-animation: myanimation 10s linear 0s infinite normal;
+  /* Safari 和 Chrome: */
+  -webkit-animation: myanimation 20s linear 0s infinite normal;
+  /* Opera: */
+  -o-animation: myanimation 10s linear 0s infinite normal;
+}
+.myanimation1 {
+  width: 100px;
+  height: 70px;
+  background:red;
+  position:absolute;
+  text-align: center;
+  animation: aw 10s linear 0s infinite normal;
+  /* Firefox: */
+  -moz-animation: aw 10s linear 0s infinite normal;
+  /* Safari 和 Chrome: */
+  -webkit-animation: aw 20s linear 0s infinite normal;
+  /* Opera: */
+  -o-animation: aw 10s linear 0s infinite normal;
+}
+.myanimation2 {
+  width: 100px;
+  height: 70px;
+  background:red;
+  position:absolute;
+  text-align: center;
+  animation: bw 10s linear 0s infinite normal;
+  /* Firefox: */
+  -moz-animation: bw 10s linear 0s infinite normal;
+  /* Safari 和 Chrome: */
+  -webkit-animation: bw 20s linear 0s infinite normal;
+  /* Opera: */
+  -o-animation: bw 10s linear 0s infinite normal;
+}
+.myanimation3 {
+  width: 100px;
+  height: 70px;
+  background:red;
+  position:absolute;
+  text-align: center;
+  animation: cw 10s linear 0s infinite normal;
+  /* Firefox: */
+  -moz-animation: cw 10s linear 0s infinite normal;
+  /* Safari 和 Chrome: */
+  -webkit-animation: cw 20s linear 0s infinite normal;
+  /* Opera: */
+  -o-animation: cw 10s linear 0s infinite normal;
+}
+
+@keyframes myanimation 
+{
+  0%   {background:red; left:0%; top:0%;}
+  25%  {background:yellow; left:90%; top:0%;}
+  50%  {background:blue; left:90%; top:90%;}
+  75%  {background:green; left:0%; top:90%;}
+  100% {background:red; left:0%; top:0%;}
+}
+@keyframes aw
+{
+  0%   {background:red; left:90%; top:0%;}
+  25%  {background:yellow; left:90%; top:90%;}
+  50%  {background:blue; left:0%; top:90%;}
+  75%  {background:green; left:0%; top:0%;}
+  100% {background:red; left:90%; top:0%;}
+}
+@keyframes bw
+{
+  0%   {background:red; left:90%; top:90%;}
+  25%  {background:yellow; left:0%; top:90%;}
+  50%  {background:blue; left:0%; top:0%;}
+  75%  {background:green; left:90%; top:0%;}
+  100% {background:red; left:90%; top:90%;}
+}
+@keyframes cw
+{
+  0%   {background:red; left:0%; top:90%;}
+  25%  {background:yellow; left:0%; top:0%;}
+  50%  {background:blue; left:90%; top:0%;}
+  75%  {background:green; left:90%; top:90%;}
+  100% {background:red; left:0%; top:90%;}
+}
+/*@keyframes myanimation
+{
+  0%   {background:red; left:0px; top:0px;}
+  25%  {background:yellow; left:200px; top:0px;}
+  50%  {background:blue; left:200px; top:200px;}
+  75%  {background:green; left:0px; top:200px;}
+  100% {background:red; left:0px; top:0px;}
+}*/
+
+/*@-moz-keyframes myanimation 
+{
+  0%   {background:red; left:0px; top:0px;}
+  25%  {background:yellow; left:200px; top:0px;}
+  50%  {background:blue; left:200px; top:200px;}
+  75%  {background:green; left:0px; top:200px;}
+  100% {background:red; left:0px; top:0px;}
+}*/
+
+/*@-webkit-keyframes myanimation 
+{
+  0%   {background:red; left:0px; top:0px;}
+  25%  {background:yellow; left:500px; top:0px;}
+  50%  {background:blue; left:500px; top:500px;}
+  75%  {background:green; left:0px; top:500px;}
+  100% {background:red; left:0px; top:0px;}
+}*/
+
+/*@-o-keyframes myanimation 
+{
+  0%   {background:red; left:0px; top:0px;}
+  25%  {background:yellow; left:200px; top:0px;}
+  50%  {background:blue; left:200px; top:200px;}
+  75%  {background:green; left:0px; top:200px;}
+  100% {background:red; left:0px; top:0px;}
 }*/
