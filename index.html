@@ -19,7 +19,9 @@
     				<a ng-repeat="item in items | filter: filterField | orderBy: 'name'" ng-href="#/{{item.name}}" ng-attr-title="{{item.intro}}" ng-bind="item.name"></a>
     			</div>
     		</div>
-
+            <div class="date" ng-controller="timeController">
+                <span ng-bind="time | date: 'HH:mm:ss'"></span>
+            </div>
     		<div id="main" ui-view>
                 <div class="cowboy index">Welcome to DAWN.</div>      
             </div>

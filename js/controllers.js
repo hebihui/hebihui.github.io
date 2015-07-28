@@ -11,3 +11,15 @@ app.controller('ShowController', ['$scope','$stateParams','docFactory', function
 		$scope.content = data;
 	});
 }]);
+
+app.controller('timeController', ['$scope', '$timeout', function($scope, $timeout){
+	var timer;
+	var updateTime = function() {
+		$scope.time = new Date();
+		timer = $timeout(updateTime, 1000);
+	}
+	timer = $timeout(updateTime, 1000);
+	$scope.$on('$destroy', function() {
+		if (timer) { $timeout.cancel(timer);}
+	});
+}]);
