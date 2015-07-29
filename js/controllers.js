@@ -12,14 +12,14 @@ app.controller('ShowController', ['$scope','$stateParams','docFactory', function
 	});
 }]);
 
-app.controller('timeController', ['$scope', '$timeout', function($scope, $timeout){
-	var timer;
-	var updateTime = function() {
-		$scope.time = new Date();
-		timer = $timeout(updateTime, 1000);
-	}
-	timer = $timeout(updateTime, 1000);
-	$scope.$on('$destroy', function() {
-		if (timer) { $timeout.cancel(timer);}
-	});
+app.controller('timeController', ['$scope', function($scope){
+	// var timer;
+	// var updateTime = function() {
+	// 	$scope.time = new Date();
+	// 	timer = $timeout(updateTime, 1000);
+	// }
+	// timer = $timeout(updateTime, 1000);
+	// $scope.$on('$destroy', function() {
+	// 	if (timer) { $timeout.cancel(timer);}
+	// });
 }]);
