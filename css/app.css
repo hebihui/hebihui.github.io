@@ -141,19 +141,22 @@ body {
 }
 
 .date {
-  position: relative;
+  position: fixed;
   text-align: center;
   top: 20px;
   left: 1150px;
   width: 60px;
   height: 20px;
   box-shadow: 5px 5px 3px #888888;
+  background-color: black;
+  color: white;
   z-index: 2;
+  overflow: hidden;
   transition: width 2s,height 2s;
 }
 .date:hover {
   width: 100px;
-  height: 30px;
+  height: 40px;
   box-shadow: 10px 10px 5px #888888;
 }
 
