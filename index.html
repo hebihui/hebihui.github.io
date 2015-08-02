@@ -8,22 +8,11 @@
         <script src="http://libs.cdnjs.net/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
         <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <script src="http://libs.cdnjs.net/showdown/0.3.1/showdown.min.js"></script>
+        <script src="//cdn.jsdelivr.net/satellizer/0.11.3/satellizer.min.js"></script>
     </head>
     <body>
     	<section>
-    		<div class="sidebar" ng-controller="SideController">
-                <div class="form-group search">
-                    <input type="text" class="form-control" ng-model="filterField" placeholder="search">
-                </div>
-    			<div id="tree">
-    				<a ng-repeat="item in items | filter: filterField | orderBy: 'name'" ng-href="#/{{item.name}}" ng-attr-title="{{item.intro}}" ng-bind="item.name"></a>
-    			</div>
-    		</div>
-            <div class="date">
-                <!-- <span ng-bind="time | date: 'HH:mm:ss EEEE'"></span> -->
-                <span my-clock="'HH:mm:ss EEEE'"></span>
-            </div>
-    		<div id="main" ui-view>
+            <div ui-view>
                 <div class="cowboy index">Welcome to DAWN.</div>      
             </div>
     	</section>
@@ -31,6 +20,6 @@
     	<script src="js/filters.js"></script>
     	<script src="js/factories.js"></script>
     	<script src="js/controllers.js"></script>
-        <script src="js/directive.js"></script>
+        <script src="js/directive.js"></script> 
     </body>
 </html>

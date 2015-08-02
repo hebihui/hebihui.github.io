@@ -1,0 +1,13 @@
+<div class="sidebar" ng-controller="SideController">
+    <div class="form-group search">
+        <input type="text" class="form-control" ng-model="filterField" placeholder="search">
+    </div>
+    <div id="tree">
+        <a ng-repeat="item in items | filter: filterField | orderBy: 'name'" ng-href="#/{{item.name}}" ng-attr-title="{{item.intro}}" ng-bind="item.name"></a>
+    </div>
+</div>
+<div class="date">
+    <span my-clock="'HH:mm:ss EEEE'"></span>
+</div>
+<div id="main" ui-view>
+</div>

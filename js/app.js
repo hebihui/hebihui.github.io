@@ -9,11 +9,19 @@ app.config(['$locationProvider','$stateProvider','$urlRouterProvider', function(
 
 	// Now set up the states
 	$stateProvider
-		.state('/', {
+		.state('signin', {
 			url: '/',
+			templateUrl: 'login.html',
+			controller: 'SigninCtrl'
+		})
+		.state('manage',{
+			templateUrl: 'manage.html'
+		})
+		.state('manage.about',{
+			url: '/about',
 			templateUrl: 'templates/about.html'
 		})
-		.state("show", {
+		.state("manage.show", {
 			url: "/:name",
 			templateUrl: "templates/show.html",
 			controller: "ShowController"
@@ -21,3 +29,4 @@ app.config(['$locationProvider','$stateProvider','$urlRouterProvider', function(
 }]);
 
 // app.constant('SERVICE', {"API": "/api/v1"});
+

@@ -18,7 +18,7 @@ app.directive('myClock', ['$interval', 'dateFilter', function($interval, dateFil
       	}, 1000);
 	}
 	return{
-		link: link
-		emplateUrl: 'templates/myClock.html'
+		link: link,
+		// emplateUrl: 'templates/myClock.html'
 	};
 }]);
