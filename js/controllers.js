@@ -12,14 +12,12 @@ app.controller('ShowController', ['$scope','$stateParams','docFactory', function
 	});
 }]);
 
-app.controller('timeController', ['$scope', function($scope){
-	// var timer;
-	// var updateTime = function() {
-	// 	$scope.time = new Date();
-	// 	timer = $timeout(updateTime, 1000);
-	// }
-	// timer = $timeout(updateTime, 1000);
-	// $scope.$on('$destroy', function() {
-	// 	if (timer) { $timeout.cancel(timer);}
-	// });
+app.controller('SigninController', ['$rootScope','$scope','$state', function($rootScope, $scope, $state){
+	$scope.email = "";
+	$scope.password = "";
+	$scope.signin = function(){
+		if($scope.email == "hebihui@qiniu.com" && $scope.password == "dawn"){
+			$state.go('manage.about')
+		}
+	};
 }]);
