@@ -117,7 +117,7 @@ body {
   height: 50px;
   margin: 10px;
   vertical-align: middle;
-  background: transparent url(../image/loading.gif) center center no-repeat;
+  background: transparent url(../image/myloading.gif) center center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
