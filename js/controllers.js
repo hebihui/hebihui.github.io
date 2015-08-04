@@ -12,12 +12,20 @@ app.controller('ShowController', ['$scope','$stateParams','docFactory', function
 	});
 }]);
 
-app.controller('SigninController', ['$rootScope','$scope','$state', function($rootScope, $scope, $state){
-	$scope.email = "";
-	$scope.password = "";
-	$scope.signin = function(){
-		if($scope.email == "hebihui@qiniu.com" && $scope.password == "dawn"){
-			$state.go('manage.about')
-		}
-	};
+app.controller('SigninController', ['$rootScope','$scope','$state','$timeout','AccessToken', function($rootScope, $scope, $state,$timeout,AccessToken){
+	// $scope.email = "";
+	// $scope.password = "";
+	// $scope.signin = function(){
+	// 	if($scope.email == "hebihui@qiniu.com" && $scope.password == "dawn"){
+	// 		$state.go('manage.about')
+	// 	}
+	// };
+    $scope.$on('oauth:login', function(event, token) {
+      console.log('yo')
+      $scope.accessToken = token.access_token;
+    });
+
+    $scope.$on('oauth:logout', function(event) {
+      $scope.accessToken = null;
+    });
 }]);
