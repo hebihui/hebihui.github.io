@@ -131,7 +131,7 @@ body {
   position: fixed;
   top: 50%;
   font-size: 24px;
-  margin-left: -11%;
+  /*margin-left: -11%;*/
 }
 .cowboy.index::before{
     display: block;
@@ -321,4 +321,25 @@ body {
   object-fit: cover; }
 
 .js-slideshow img.active {
-  z-index: -1; }
+  z-index: -1; 
+}
+
+
+/* login box  */
+
+
+div.login {
+  width:385px;
+  padding:10px 10px 0px 10px;
+  margin: auto;
+  border:1px solid #BFBFBF;
+  /*background-color:transparent;*/
+  background-color:whitesmoke;
+  opacity: 0.7;
+  /* Add box-shadow */
+  box-shadow:2px 2px 3px #aaaaaa;
+}
+
+div.login h2 {
+  text-align: center;
+}
