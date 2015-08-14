@@ -1,36 +1,45 @@
 <script src="js/login.js"></script>
 <embed autoplay="true" src="image/rock.mp3" width="0" height="0"/>
 <div class="js-slideshow">
-    <img src="image/duty.jpg" data-color="rgb(229,34,140)" class="active" >
+    <img src="image/duty.jpg" data-color="rgb(229,34,140)" class="active">
     <img src="image/fire.jpg" data-color="rgb(74,144,226)">
     <img src="image/rock.jpg" data-color="rgb(197,0,0)">
     <img src="image/dawn.jpg" data-color="rgb(245,205,35)">
 </div>
-<div class="container" style="width:385px;margin-top:154px;color:#41744C;optity:0.8;">
+
+<!-- redirect-uri="http://localhost:8000/#/about" -->
+
+<div class="container" style="width:410px;margin-top:154px;color:#41744C;optity:0.8;">
     <div class="login">
-        <form class="form-signin">
+        <form role="form" class="">
             <h2 class="form-signin-heading">Please sign in</h2>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="email" style="margin:10 0;optity:0.8" required autofocus>
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="password" style="optity:0.8" required>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                    <input type="email" class="form-control" placeholder="email" ng-model="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                    <input type="password" class="form-control" placeholder="password" ng-model="password" required>
+                </div>
+            </div>
             <div class="checkbox">
                 <label>
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" ng-click="signin()">Sign in</button>
+            <button type="submit" class="btn btn-lg btn-primary btn-block" ng-click="signin()">Sign in</button>
             <div class="container" style="text-align:center;width:100%;padding-top:11px;font-size:20px;">
                 <oauth
                   site="https://github.com/login"
                   client-id="c9846255ee2d0486a832"
                   redirect-uri="http://localhost:8000/#/about"
-                  text="sign in with github"
+                  text="Sign in with github"
                 >
                 </oauth>
             </div>
         </form>
     </div>
 </div>
-      <!-- redirect-uri="http://localhost:8000/#/about" -->
-
