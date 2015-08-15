@@ -1,10 +1,10 @@
 <script src="js/login.js"></script>
-<embed autoplay="true" src="image/rock.mp3" width="0" height="0"/>
+<embed autoplay="true" src="http://7xl4ov.com1.z0.glb.clouddn.com/rock.mp3" width="0" height="0"/>
 <div class="js-slideshow">
-    <img src="image/duty.jpg" data-color="rgb(229,34,140)" class="active">
-    <img src="image/fire.jpg" data-color="rgb(74,144,226)">
-    <img src="image/rock.jpg" data-color="rgb(197,0,0)">
-    <img src="image/dawn.jpg" data-color="rgb(245,205,35)">
+    <img src="http://7xl4ov.com1.z0.glb.clouddn.com/duty.jpg" data-color="rgb(229,34,140)" class="active">
+    <img src="http://7xl4ov.com1.z0.glb.clouddn.com/fire.jpg" data-color="rgb(74,144,226)">
+    <img src="http://7xl4ov.com1.z0.glb.clouddn.com/rock.jpg" data-color="rgb(197,0,0)">
+    <img src="http://7xl4ov.com1.z0.glb.clouddn.com/dawn.jpg" data-color="rgb(245,205,35)">
 </div>
 
 <!-- redirect-uri="http://localhost:8000/#/about" -->
@@ -22,7 +22,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-                    <input type="password" class="form-control" placeholder="password" ng-model="password" required>
+                    <input type="password" pattern="((?=.*\d)(?=.*\D)|(?=.*[a-zA-Z])(?=.*[^a-zA-Z]))^.{8,16}$" class="form-control" placeholder="password" ng-model="password" required title="密码规则:长度8~16位,数字、字母、字符至少包含两种。">
                 </div>
             </div>
             <div class="checkbox">
