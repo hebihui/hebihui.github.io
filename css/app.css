@@ -347,4 +347,28 @@ div.login h2 {
 
 .navbar {
   border-radius: 0px;
+  height: 52px;
+  background-color: #222;
+}
+
+.myDivideLine {
+  width: 1px;
+  background-color: #000000;
+  box-shadow: 1px 0 #2a2a2a;
+  height: 50px;
+  margin-left: 1px;
+  display: inline-block;
+}
+
+.navbar-collapse.collapse {
+  padding: 0px;
+  display: inline-block!important;
+  margin-left: -3px;
+}
+
+.myLiLine {
+  width: 1px;
+  background-color: #121212;
+  box-shadow: 1px 0 #2a2a2a;
+  height: 50px;
 }
