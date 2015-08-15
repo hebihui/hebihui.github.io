@@ -21,6 +21,9 @@ app.config(['$locationProvider', '$stateProvider', '$urlRouterProvider', functio
     }).state('manage.about', {
         url: '/about',
         templateUrl: 'templates/about.html'
+    }).state('manage.me', {
+        url: '/me',
+        templateUrl: 'me.html'
     }).state("manage.show", {
         url: "/:name",
         templateUrl: "templates/show.html",
