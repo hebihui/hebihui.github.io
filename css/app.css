@@ -10,7 +10,7 @@ body {
 .sidebar {
 	width: 254px;
 	position: fixed;
-	border-right: 1px solid #999;
+	border-right: 1px solid #222;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -18,9 +18,9 @@ body {
 
 .search {
 	padding: 5px;
-	border-bottom: 1px solid #666;
+	border-bottom: 1px solid #222;
 	position: relative;
-	background: #e8e8e8;
+	background: #000;
 	top: 0;
 	left: 0;
 }
@@ -44,20 +44,27 @@ body {
 	position: absolute;
 	top: 38px;
 	bottom: 0;
+  background-color: #121212;
 }
 #tree a {
 	padding: 5px 10px;
 	position: relative;
 	display: block;
+  color: #999999;
 }
 #tree a:nth-child(odd) {
-	background-color: #EFEFEF;
+	background-color: #222;
 }
 #tree a:hover {
-	background-color: #CCC;
+/*	background-color: #080808;
+  color: #FFF;
+*/
+color: #080808;
+background-color: #FFf;
 }
 #tree a:focus {
 	background-color: #63A7DE;
+  color: #FFF;
 }
 
 #main {
@@ -371,4 +378,8 @@ div.login h2 {
   background-color: #121212;
   box-shadow: 1px 0 #2a2a2a;
   height: 50px;
+}
+
+.fullScreen {
+  margin-left: -254px;
 }
