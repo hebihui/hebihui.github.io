@@ -1,6 +1,20 @@
 html,body {
 	height: 100%;
+  /*scrollbar-face-color:#C00;  */
+  /*scrollbar-highlight-color:#121212;  */
+  /*scrollbar-3dlight-color:#F00;  */
+  /*scrollbar-darkshadow-color:#000; */
+  /*scrollbar-Shadow-color:#000;  */
+  /*scrollbar-arrow-color:#FFF;*/
+  /*scrollbar-track-color:#121212;*/
 }
+
+html::-webkit-scrollbar-track-piece{background-color:#222;}
+html::-webkit-scrollbar{width:10px;}
+html::-webkit-scrollbar-thumb{background:#080808;}
+#tree::-webkit-scrollbar-track-piece{background-color:#222;}
+#tree::-webkit-scrollbar{width:10px;}
+#tree::-webkit-scrollbar-thumb{background:#080808;}
 
 body {
 	position: relative;
@@ -14,6 +28,7 @@ body {
 	top: 0;
 	bottom: 0;
 	left: 0;
+  background-color: #000;
 }
 
 .search {
@@ -42,7 +57,7 @@ body {
 	padding: 0;
 	margin-top: -5px;
 	position: absolute;
-	top: 38px;
+	top: 40px;
 	bottom: 0;
   background-color: #121212;
 }
@@ -382,4 +397,8 @@ div.login h2 {
 
 .fullScreen {
   margin-left: -254px;
+}
+
+.form-group {
+  margin-bottom: 0px;
 }
