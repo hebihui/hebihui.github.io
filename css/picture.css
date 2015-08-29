@@ -10,7 +10,7 @@
 ul.picture {
   padding-top: 50px;
   overflow: hidden;
-  background-image: url("../image/steel_01.jpg");
+  background-image: url("../image/steel_02.jpg");
 }
 
 img {
@@ -21,7 +21,7 @@ img {
 
 ul.picture a:after {
   content: attr(title);
-  display:block;
+  /*display:block;*/
 }
 
 ul.picture li {
@@ -62,8 +62,8 @@ ul.picture li:nth-child(even) a {
  
 /* Don't rotate every third image, but offset its position */
 ul.picture li:nth-child(3n) a {
-  -webkit-transform: none;
-  -moz-transform: none;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
   position: relative;
   top: -5px;
 }
@@ -88,5 +88,28 @@ ul.picture li:nth-child(11n) a {
   position: relative;
   top: 3px;
   left: -5px;
+}
+
+.effect1 {
+    position: relative;
+}
+.effect1:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 18px;
+    left: 12px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 15px #777;
+    box-shadow: 2px 4px 3px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
 }
 
