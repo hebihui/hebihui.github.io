@@ -55,7 +55,7 @@ body {
 	overflow: auto;
 	list-style: none;
 	padding: 0;
-	margin-top: -5px;
+	margin-top: 12px;
 	position: absolute;
 	top: 40px;
 	bottom: 0;
@@ -400,6 +400,6 @@ div.login h2 {
 }
 
 .form-group {
-  margin-bottom: 0px;
+  padding-bottom: 13px;
   margin-top: 10px;
 }
