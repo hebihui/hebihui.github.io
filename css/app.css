@@ -12,9 +12,9 @@ html,body {
 html::-webkit-scrollbar-track-piece{background-color:#222;}
 html::-webkit-scrollbar{width:10px;}
 html::-webkit-scrollbar-thumb{background:#080808;}
-#tree::-webkit-scrollbar-track-piece{background-color:#222;}
+#tree::-webkit-scrollbar-track-piece{background-color:#2a2a2a;border-left: 1px solid #121212;border-right: 1px solid #121212;}
 #tree::-webkit-scrollbar{width:10px;}
-#tree::-webkit-scrollbar-thumb{background:#080808;}
+#tree::-webkit-scrollbar-thumb{background:#777474;border-left: 1px solid #121212;border-right: 1px solid #121212;}
 
 body {
 	position: relative;
@@ -32,7 +32,8 @@ body {
 }
 
 .search {
-	padding: 5px;
+	padding: 7px 3px 11px 3px;
+  margin: 4px 0 2px 0;
 	border-bottom: 1px solid #222;
 	position: relative;
 	background: #000;
@@ -47,7 +48,7 @@ body {
   	-webkit-box-sizing: border-box;
   	-webkit-appearance: searchfield;
 	display: inline-block;
-	height: 22px;
+	height: 28px;
 }
 
 #tree {
@@ -373,33 +374,25 @@ div.login h2 {
   background-color: #222;
 }
 
-.myDivideLine {
-  width: 1px;
-  background-color: #000000;
-  box-shadow: 1px 0 #2a2a2a;
-  height: 50px;
-  margin-left: 1px;
-  display: inline-block;
+.myDivideLine ul{
+  border-left: 1px solid #121212;
+  border-right: 1px solid #2a2a2a;
+}
+
+.myDivideLine ul li{
+  border-right: 1px solid #121212;
+  border-left: 1px solid #2a2a2a;
+}
+
+li.active {
+  margin: 0;
 }
 
 .navbar-collapse.collapse {
   padding: 0px;
   display: inline-block!important;
-  margin-left: -3px;
-}
-
-.myLiLine {
-  width: 1px;
-  background-color: #121212;
-  box-shadow: 1px 0 #2a2a2a;
-  height: 50px;
 }
 
 .fullScreen {
   margin-left: -254px;
-}
-
-.form-group {
-  padding-bottom: 13px;
-  margin-top: 10px;
 }

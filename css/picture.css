@@ -9,6 +9,8 @@
 
 ul.picture {
   padding-top: 50px;
+  padding-left: 25px;
+  margin-bottom: 0;
   overflow: hidden;
   background-image: url("../image/steel_02.jpg");
 }
