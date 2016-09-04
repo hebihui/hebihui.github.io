@@ -1,5 +1,5 @@
 angular.module('customFilters.markdown', []).filter('markdown', function() {
-	var converter = new showdown.converter();
+	var converter = new showdown.Converter();
 	return function(input) {
 		return converter.makeHtml(input || '');
 	}
